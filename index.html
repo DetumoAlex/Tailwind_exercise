@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config ={
+            theme:{
+                extend:{
+                    colors:{
+                        ehis: '#fff3b2',
+                        sydney:'#ffe0d8',
+                        ayo:'#ff9b93',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <main class="min-h-screen min-w-screen bg-lime-100 flex items-center justify-center">
+
+        <div class="form-container  border w-full h-screen">
+            <form action="" class="w-1/4 h-auto shadow-md rounded-md p-5 mx-auto mt-10 bg-white">
+                <div class="my-4 flex justify-between items-center">
+                    <label for="">Email:</label>
+                    <input type="email" class="bg-slate-100 active:outline active:outline-offset-2 outline-blue-400 p-1 rounded">
+                </div>
+
+                <div class="my-4 flex justify-between items-center">
+                    <label for="">Password:</label>
+                    <input type="password" class="bg-slate-100 active:outline active:outline-offset-2 outline-blue-400 p-1 rounded">
+                </div>
+
+                <div>
+                    <input type="submit" value="login" class="text-white active:ring hover:ring cursor-pointer bg-blue-500 py-1 hover:bg-blue-300 active:bg-blue-700 rounded w-full my-4">
+                </div>
+
+                <div>
+                    <p class="text-center mb-4">Continue With</p>
+                    <div class="flex flex-col gap-y-4">
+                    <button class="py-2 w-100 border rounded-lg hover:bg-pink-200 active:bg-pink-500"><i class="fa-brands fa-google"></i></button>
+                    <button class="py-2 w-100 border rounded-lg hover:bg-blue-300 active:bg-blue-500"><i class="fa-brands fa-linkedin"></i></button>
+                    <button class="py-2 w-100 border rounded-lg hover:bg-gray-200 active:bg-gray-500"><i class="fa-brands fa-github"></i></button>
+                </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
